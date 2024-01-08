@@ -1,6 +1,6 @@
 # nuxt-antd-css-demo
 
-基于 Nuxt.js 构建的 Ant Design 组件库的 Demo 项目
+基于 Nuxt3 + Ant Design 组件库的 Demo 项目，用于测试 css
 
 <br />
 
