@@ -1,6 +1,6 @@
 {
   "name": "nuxt-antd-css-demo",
-  "description": "基于 Nuxt3 + Ant Design 组件库的 Demo 项目，用于测试 css",
+  "description": "基于 Nuxt3 + Ant Design Vue 的 Demo 项目，用于测试 css",
   "type": "module",
   "scripts": {
     "dev": "nuxt dev",
