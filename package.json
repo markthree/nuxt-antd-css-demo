@@ -13,5 +13,13 @@
     "@ant-design-vue/nuxt": "^1.3.0",
     "ant-design-vue": "latest",
     "nuxt": "^3.9.1"
+  },
+  "nzip": {
+    "name": "nuxt-antd-css-demo",
+    "skip": [
+      ".git",
+      "dist",
+      ".*.zip$"
+    ]
   }
 }
