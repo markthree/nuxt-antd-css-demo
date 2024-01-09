@@ -13,6 +13,7 @@ export default defineNuxtModule({
 
     // generate 时，通过 replace 修改 process.env.NODE_ENV 为 production (默认为     prerender)
     // 而 antd 生成 css 前缀时依赖 process.env.NODE_ENV
+    // 等待 https://github.com/vueComponent/ant-design-vue/pull/7256 合并
     if (nuxt.options.dev === false && nuxt.options.nitro.static) {
       nuxt.options.nitro.replace ??= {};
       nuxt.options.nitro.replace["process.env.NODE_ENV"] = "'production'";
