@@ -1,11 +1,10 @@
 <template>
-    <nuxt-layout>
-        <a-space wrap>
-            <a-button type="primary">Primary Button</a-button>
-            <a-button>Default Button</a-button>
-            <a-button type="dashed">Dashed Button</a-button>
-            <a-button type="text">Text Button</a-button>
-            <a-button type="link">Link Button</a-button>
-        </a-space>
-    </nuxt-layout>
+    <a-space style="margin-bottom: 20px;">
+        <nuxt-link to="/">index</nuxt-link>
+        <nuxt-link to="/about">about</nuxt-link>
+    </a-space>
+
+    <a-extract-style>
+        <nuxt-page />
+    </a-extract-style>
 </template>

@@ -17,6 +17,7 @@ export default defineNuxtModule({
       nuxt.options.nitro.replace ??= {};
       nuxt.options.nitro.replace["process.env.NODE_ENV"] = "'production'";
     }
-    nuxt.options.app.head?.style?.push(extractStyle());
+    // 由 components/AExtractStyle.vue 提供按需加载 css 支持 
+    // nuxt.options.app.head?.style?.push(extractStyle());
   },
 });
