@@ -6,6 +6,11 @@ export default defineNuxtModule({
     name: "nuxt-antd-css",
   },
   setup(_, nuxt) {
+    // spa 时并不需要注入 css
+    if (!nuxt.options.ssr) {
+      return;
+    }
+
     // generate 时，通过 replace 修改 process.env.NODE_ENV 为 production (默认为     prerender)
     // 而 antd 生成 css 前缀时依赖 process.env.NODE_ENV
     if (nuxt.options.dev === false && nuxt.options.nitro.static) {
